@@ -1,0 +1,242 @@
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+* {
+    font-family: 'Janna LT', sans-serif;
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+body {
+    background: linear-gradient(135deg, #FFF5E6 0%, #FFE4B5 100%);
+    color: #333;
+    animation: fadeIn 1s ease-out;
+}
+
+.logo {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.logo img {
+    width: 150px;
+    transition: transform 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.logo img:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.logo h2 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #FF6600;
+    margin-top: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    animation: fadeIn 1s ease-out 0.5s both;
+}
+
+.book {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(255, 102, 0, 0.1);
+    animation: fadeIn 1s ease-out 1s both;
+}
+
+.book p {
+    font-size: 28px;
+    color: #FF4500;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.book input {
+    width: 70%;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 2px solid #FF7F00;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.book input:focus {
+    outline: none;
+    border-color: #FF4500;
+    box-shadow: 0 0 0 3px rgba(255, 69, 0, 0.2);
+}
+
+.book input[type="submit"] {
+    font-size: 20px;
+    color: #fff;
+    background: linear-gradient(45deg, #FF7F00, #FF4500);
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.book input[type="submit"]:hover {
+    background: linear-gradient(45deg, #FF4500, #FF7F00);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.4);
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    font-size: 18px;
+    margin-top: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 10px 30px rgba(255, 102, 0, 0.1);
+    animation: fadeIn 1s ease-out 1.5s both;
+}
+
+th {
+    background: linear-gradient(45deg, #FF7F00, #FF4500);
+    color: #fff;
+    padding: 15px 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+td {
+    padding: 15px 0;
+    border-bottom: 1px solid #FFE4B5;
+    transition: all 0.3s ease;
+}
+
+tr {
+    transition: all 0.3s ease;
+}
+
+tr:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(255, 102, 0, 0.1);
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 228, 181, 0.3);
+}
+
+@media (max-width: 768px) {
+    .book input, .book input[type="submit"] {
+        width: 90%;
+    }
+    
+    table {
+        font-size: 16px;
+    }
+}
+input[type="submit"][name="deleteAll"] {
+    font-size: 18px;
+    color: #fff;
+    background: linear-gradient(45deg, #FF4C4C, #FF0000);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    animation: pulse 2s infinite;
+}
+
+input[type="submit"][name="deleteAll"]:hover {
+    background: linear-gradient(45deg, #FF0000, #FF4C4C);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4);
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+input[type="submit"][name="send"] {
+    font-size: 24px; /* يمكنك تغيير هذا الرقم لزيادة أو تقليل حجم الخط */
+    color: #fff;
+    background: linear-gradient(45deg, #FF7F00, #FF4500);
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+input[type="submit"][name="send"]:hover {
+    background: linear-gradient(45deg, #FF4500, #FF7F00);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.4);
+}
+body {
+    background: linear-gradient(135deg, #E0F7FA 0%, #B2DFDB 100%);
+    color: #333;
+}
+
+.logo h2 {
+    color: #00796B;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book p {
+    color: #004D40;
+}
+
+.book input {
+    border: 2px solid #004D40;
+}
+
+.book input:focus {
+    border-color: #00796B;
+    box-shadow: 0 0 0 3px rgba(0, 150, 136, 0.2);
+}
+
+.book input[type="submit"] {
+    background: linear-gradient(45deg, #004D40, #00796B);
+}
+
+.book input[type="submit"]:hover {
+    background: linear-gradient(45deg, #00796B, #004D40);
+}
+
+table {
+    background-color: rgba(224, 248, 255, 0.8);
+}
+
+th {
+    background: linear-gradient(45deg, #004D40, #00796B);
+}
+
+td {
+    border-bottom: 1px solid #B2DFDB;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(178, 223, 219, 0.3);
+}
+
+input[type="submit"][name="deleteAll"] {
+    background: linear-gradient(45deg, #B71C1C, #C62828);
+}
+
+input[type="submit"][name="deleteAll"]:hover {
+    background: linear-gradient(45deg, #C62828, #B71C1C);
+}

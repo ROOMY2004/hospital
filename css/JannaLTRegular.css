@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'JannaLTRegular';
+    src: url('fonts/JannaLTRegular.eot');
+    src: url('fonts/JannaLTRegular.eot') format('embedded-opentype'),
+         url('fonts/JannaLTRegular.woff2') format('woff2'),
+         url('fonts/JannaLTRegular.woff') format('woff'),
+         url('fonts/JannaLTRegular.ttf') format('truetype'),
+         url('fonts/JannaLTRegular.svg#JannaLTRegular') format('svg');
+}
